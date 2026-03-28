@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denty360 | Clínica Odontológica</title>
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Denty360</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO / INICIO -->
+    <section id="inicio">
+        <div class="contenido-hero">
+            <h2>Tu sonrisa en las mejores manos</h2>
+            <p>Atención odontológica moderna, segura y confiable</p>
+            <a href="#citas" class="btn">Agendar Cita</a>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+
+        <div class="card">
+            <h3>Ortodoncia</h3>
+            <p>Corrección de dientes y sonrisa perfecta.</p>
+        </div>
+
+        <div class="card">
+            <h3>Implantes</h3>
+            <p>Recupera tu sonrisa con tecnología moderna.</p>
+        </div>
+
+        <div class="card">
+            <h3>Blanqueamiento</h3>
+            <p>Dientes más blancos y saludables.</p>
+        </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="equipo" class="animar">
+    <h2>Nuestro Equipo</h2>
+
+    <div class="card">
+        <img src="img/doctor.png" alt="Doctor">
+        <h3>Dr. Carlos Marriaga</h3>
+        <p>Especialista en ortodoncia</p>
+    </div>
+
+    <div class="card">
+        <img src="img/doctora.png" alt="Doctora">
+        <h3>Dra. Yaudith Escobar</h3>
+        <p>Especialista en cirugía oral</p>
+    </div>
+</section>citas" class="animar">
+    <h2>Agenda tu Cita</h2>
+
+    <form action="/citas" method="POST" class="formulario">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="correo" placeholder="Correo" required>
+        <input type="date" name="fecha" required>
+        <button type="submit">Reservar</button>
+    </form>
+</section>
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>📍 Barranquilla, Colombia</p>
+        <p>📞 300 123 4567</p>
+        <p>📧 contacto@denty360.com</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Denty360 - Todos los derechos reservados</p>
+    </footer>
+<script>
+const elementos = document.querySelectorAll('.animar');
+
+const mostrarScroll = () => {
+    elementos.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const visible = window.innerHeight - 100;
+
+        if (top < visible) {
+            el.classList.add('visible');
+        }
+    });
+};
+
+window.addEventListener('scroll', mostrarScroll);
+</script>
+
+</body>
+</html>
