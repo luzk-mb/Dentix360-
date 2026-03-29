@@ -1,3 +1,6 @@
+// ==========================
+// ANIMACIÓN SCROLL
+// ==========================
 const elementos = document.querySelectorAll('.animar');
 
 const mostrarScroll = () => {
@@ -12,3 +15,24 @@ const mostrarScroll = () => {
 };
 
 window.addEventListener('scroll', mostrarScroll);
+window.addEventListener('load', mostrarScroll);
+
+
+// ==========================
+// MENSAJE BONITO FORMULARIO
+// ==========================
+const form = document.querySelector(".formulario");
+const mensaje = document.getElementById("mensaje-exito");
+
+if (form) {
+    form.addEventListener("submit", function() {
+
+        // Mostrar mensaje
+        mensaje.classList.add("mostrar");
+
+        // Ocultar después de 3 segundos
+        setTimeout(() => {
+            mensaje.classList.remove("mostrar");
+        }, 3000);
+    });
+}

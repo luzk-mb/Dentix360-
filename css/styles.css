@@ -184,3 +184,22 @@ footer {
         margin: 10px auto;
     }
 }
+.mensaje-exito {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #198754;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.5s ease;
+    z-index: 1000;
+}
+
+.mensaje-exito.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
