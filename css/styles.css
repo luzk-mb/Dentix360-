@@ -97,14 +97,11 @@ footer {
 }
 
 #inicio {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/dentix.png");
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("/dentix360/img/dentix.png");
+    background-size: cover;
+    background-position: center;
+   
 
 .contenido-hero {
     text-align: center;
