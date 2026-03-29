@@ -155,9 +155,18 @@ footer {
     }
 
     #inicio {
-        height: 70vh;
-        padding: 40px;
-    }
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("/img/dentix.png");
+    background-size: cover;       /* Hace que ocupe todo */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat; /* No se repite */
+    
+    height: 100vh; /* Pantalla completa */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
     .contenido-hero h2 {
         font-size: 25px;
